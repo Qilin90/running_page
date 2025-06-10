@@ -29,6 +29,7 @@ import {
   IViewState,
   geoJsonForMap,
   getMapStyle,
+  isTouchDevice,
 } from '@/utils/utils';
 import RunMarker from './RunMarker';
 import RunMapButtons from './RunMapButtons';
@@ -191,6 +192,7 @@ const RunMap = ({
       // mapStyle={`https://api.maptiler.com/maps/openstreetmap/style.json?key=${MAP_TILE_ACCESS_TOKEN}`}
       mapStyle={mapStyle}
       ref={mapRefCallback}
+      cooperativeGestures={isTouchDevice()}
       mapboxAccessToken={MAPBOX_TOKEN}
     >
       <RunMapButtons changeYear={changeYear} thisYear={thisYear} />
