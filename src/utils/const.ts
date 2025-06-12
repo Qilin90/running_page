@@ -50,7 +50,7 @@ const SHOW_ELEVATION_GAIN = false;
 const RICH_TITLE = false;
 
 // IF you outside China please make sure IS_CHINESE = false
-const IS_CHINESE = true;
+const IS_CHINESE = false;
 const USE_ANIMATION_FOR_GRID = false;
 const CHINESE_INFO_MESSAGE = (yearLength: number, year: string): string => {
   const yearStr = year === 'Total' ? '所有' : ` ${year} `;
@@ -178,6 +178,7 @@ export const MAP_TILE_VENDOR = 'maptiler';
 
 // map tiles style name, see MAP_TILE_STYLES for more details
 //export const MAP_TILE_STYLE = 'dark-v10';
+
 export const MAP_TILE_STYLE = 'outdoor-dark';
 
 // access token. you can apply a new one, it's free.
