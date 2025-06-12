@@ -175,9 +175,9 @@ const RunMap = ({
   }, []);
 
   return (
-    <Map
-      {...viewState}
-      //和下面的initialViewState无关
+    <Map 
+     {...viewState}
+     //和下面的initialViewState无关
       //  initialViewState={{
       //   longitude: 116.404,
       //   latitude: 39.915,
