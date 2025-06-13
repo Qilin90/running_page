@@ -174,16 +174,16 @@ const RunMap = ({
   }, []);
 
   return (
-    <Map 
-     {...viewState}
-     //和下面的initialViewState无关
+    <Map
+      {...viewState}
+      //和下面的initialViewState无关
       //  initialViewState={{
       //   longitude: 116.404,
       //   latitude: 39.915,
       //   zoom: 10
       // }}
       //和下面的initialViewState无关
-      onMove={onMove} 
+      onMove={onMove}
       style={style}
       // onMove={onMove}
       // style={{width: '100%', height: '100vh'}}
