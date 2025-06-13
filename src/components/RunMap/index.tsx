@@ -189,8 +189,8 @@ const RunMap = ({
       // onMove={onMove}
       // style={{width: '100%', height: '100vh'}}
       //mapStyle={`https://api.maptiler.com/maps/streets-v2/style.json?key=${MAP_TILE_ACCESS_TOKEN}`}
-      mapStyle={`https://api.maptiler.com/maps/openstreetmap/style.json?key=${MAP_TILE_ACCESS_TOKEN}`}
-      //mapStyle={mapStyle}
+      // mapStyle={`https://api.maptiler.com/maps/openstreetmap/style.json?key=${MAP_TILE_ACCESS_TOKEN}`}
+      mapStyle={mapStyle}
       ref={mapRefCallback}
       cooperativeGestures={isTouchDevice()}
       mapboxAccessToken={MAPBOX_TOKEN}
