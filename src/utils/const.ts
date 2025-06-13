@@ -50,7 +50,7 @@ const SHOW_ELEVATION_GAIN = false;
 const RICH_TITLE = false;
 
 // IF you outside China please make sure IS_CHINESE = false
-const IS_CHINESE = false;
+const IS_CHINESE = true;
 const USE_ANIMATION_FOR_GRID = false;
 const CHINESE_INFO_MESSAGE = (yearLength: number, year: string): string => {
   const yearStr = year === 'Total' ? '所有' : ` ${year} `;
@@ -182,7 +182,7 @@ export const MAP_TILE_STYLE = 'outdoor-dark'
 // maptiler: Gt5R0jT8tuIYxW6sNrAg | sign up at https://cloud.maptiler.com/auth/widget
 // stadiamaps: 8a769c5a-9125-4936-bdcf-a6b90cb5d0a4 |sign up at https://client.stadiamaps.com/signup/
 //export const MAP_TILE_ACCESS_TOKEN = 'Gt5R0jT8tuIYxW6sNrAg';
-export const MAP_TILE_ACCESS_TOKEN = 'wMuQEt4axQ5ypAeU7oms';
+export const MAP_TILE_ACCESS_TOKEN = 'akOp8VcI8gouSDTAW48h';
 
 export const MAP_TILE_STYLES = {
   maptiler: {
