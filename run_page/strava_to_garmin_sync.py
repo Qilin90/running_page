@@ -86,8 +86,18 @@ if __name__ == "__main__":
 
     try:
         garmin_client = Garmin(options.secret_string, garmin_auth_domain)
-        loop = asyncio.get_event_loop()
-        future = asyncio.ensure_future(
+        # loop = asyncio.get_event_loop()
+        # future = asyncio.ensure_future(
+        #     upload_to_activities(
+        #         garmin_client,
+        #         strava_client,
+        #         strava_web_client,
+        #         DataFormat.ORIGINAL,
+        #         options.use_fake_garmin_device,
+        #     )
+        # )
+        # loop.run_until_complete(future)
+        asyncio.run(
             upload_to_activities(
                 garmin_client,
                 strava_client,
@@ -96,7 +106,6 @@ if __name__ == "__main__":
                 options.use_fake_garmin_device,
             )
         )
-        loop.run_until_complete(future)
     except Exception as err:
         print(err)
 

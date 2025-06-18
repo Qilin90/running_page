@@ -448,8 +448,19 @@ if __name__ == "__main__":
         # merge downloaded_ids:list
         downloaded_ids = list(set(downloaded_ids + downloaded_gpx_ids))
 
-    loop = asyncio.get_event_loop()
-    future = asyncio.ensure_future(
+    # loop = asyncio.get_event_loop()
+    # future = asyncio.ensure_future(
+    #     download_new_activities(
+    #         secret_string,
+    #         auth_domain,
+    #         downloaded_ids,
+    #         is_only_running,
+    #         folder,
+    #         file_type,
+    #     )
+    # )
+    # loop.run_until_complete(future)
+    future = asyncio.run(
         download_new_activities(
             secret_string,
             auth_domain,
@@ -459,7 +470,6 @@ if __name__ == "__main__":
             file_type,
         )
     )
-    loop.run_until_complete(future)
     new_ids, id2title = future.result()
     # fit may contain gpx(maybe upload by user)
     if file_type == "fit":
